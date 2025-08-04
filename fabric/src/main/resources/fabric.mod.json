@@ -5,7 +5,7 @@
   "name": "Create: Totem Factory",
   "description": "The industrial revolution has come to Minecraft, and with it, new knowledge and discoveries both in the field of science and magic.",
   "authors": [
-    "OG: MYR",
+    "OG: MarcosJoestar & jargames99",
     "PORT: JustMili"
   ],
   "contact": {
@@ -18,10 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.justmili.totemfactory.TotemFactory"
-    ],
-    "client": [
-      "net.justmili.totemfactory.ClientInit"
+      "net.mysticcreations.totemfactory.TotemFactory"
     ]
   },
   "depends": {
@@ -29,8 +26,5 @@
     "fabric": "*",
     "minecraft": "1.21.1",
     "java": ">=17"
-  },
-  "mixins": [
-    "totemfactory.mixins.json"
-  ]
+  }
 }
