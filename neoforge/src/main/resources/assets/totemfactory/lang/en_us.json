@@ -1,0 +1,13 @@
+{
+  "itemGroup.totemfactory": "Example Mod Tab",
+  "block.totemfactory.example_block": "Example Block",
+  "item.totemfactory.example_item": "Example Item",
+
+  "totemfactory.configuration.title": "Create: Totem Factory Configs",
+  "totemfactory.configuration.section.totemfactory.common.toml": "Create: Totem Factory Configs",
+  "totemfactory.configuration.section.totemfactory.common.toml.title": "Create: Totem Factory Configs",
+  "totemfactory.configuration.items": "Item List",
+  "totemfactory.configuration.logDirtBlock": "Log Dirt Block",
+  "totemfactory.configuration.magicNumberIntroduction": "Magic Number Text",
+  "totemfactory.configuration.magicNumber": "Magic Number"
+}

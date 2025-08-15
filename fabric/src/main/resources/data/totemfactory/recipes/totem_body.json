@@ -1,0 +1,49 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "totemfactory:totem_body_casing"
+    },
+    "loops": 1,
+    "results": [
+      {
+        "item": "totemfactory:totem_body"
+      }
+    ],
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "totemfactory:incomplete_totem_body_casing"
+          },
+          {
+            "item" : "minecraft:end_crystal"
+          }
+        ],
+        "results": [
+          {
+            "item": "totemfactory:incomplete_totem_body"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "totemfactory:incomplete_totem_body"
+          },
+          {
+            "item" : "create:brass_ingot"
+          }
+        ],
+        "results": [
+          {
+            "item": "totemfactory:totem_body"
+          }
+        ]
+      }
+    ],
+    "transitionalItem": {
+      "item": "totemfactory:incomplete_totem_body"
+    }
+  }

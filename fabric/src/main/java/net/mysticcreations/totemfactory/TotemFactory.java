@@ -3,8 +3,8 @@ package net.mysticcreations.totemfactory;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.mysticcreations.totemfactory.init.Tabs;
-import net.mysticcreations.totemfactory.init.Items;
+import net.mysticcreations.totemfactory.init.TfTabs;
+import net.mysticcreations.totemfactory.init.TfItems;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -15,7 +15,7 @@ public class TotemFactory implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing Create: Totem Factory...");
-		Tabs.load();
-		Items.load();
+		TfTabs.load();
+		TfItems.load();
 	}
 }
