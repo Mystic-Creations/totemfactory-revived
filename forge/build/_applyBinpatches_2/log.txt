@@ -1,18 +1,18 @@
-Java Launcher: C:\Program Files\Eclipse Adoptium\jdk-17.0.14.7-hotspot\bin\java.exe
-Arguments: '--clean, C:\Users\rodx1\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.20.1-20230612.114412\joined-1.20.1-20230612.114412-srg.jar, --output, C:\Users\rodx1\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.8\forge-1.20.1-47.4.8-binpatched.jar, --apply, C:\Users\rodx1\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.8\forge-1.20.1-47.4.8-binpatches.lzma'
+Java Launcher: /home/eetgeenappels/.jdks/ms-17.0.16/bin/java
+Arguments: '--clean, /home/eetgeenappels/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.20.1-20230612.114412/joined-1.20.1-20230612.114412-srg.jar, --output, /home/eetgeenappels/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.8/forge-1.20.1-47.4.8-binpatched.jar, --apply, /home/eetgeenappels/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.8/forge-1.20.1-47.4.8-binpatches.lzma'
 Classpath:
- - C:\Users\rodx1\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\binarypatcher\1.1.1\binarypatcher-1.1.1-fatjar.jar
-Working directory: C:\Users\rodx1\Github Repositories\totemfactory\forge\build\_applyBinpatches_2
+ - /home/eetgeenappels/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/binarypatcher/1.1.1/binarypatcher-1.1.1-fatjar.jar
+Working directory: /home/eetgeenappels/IdeaProjects/totemfactory-fabric-port/forge/build/_applyBinpatches_2
 Main class: net.minecraftforge.binarypatcher.ConsoleTool
 ====================================
 Applying: 
-  Clean:     C:\Users\rodx1\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.20.1-20230612.114412\joined-1.20.1-20230612.114412-srg.jar
-  Output:    C:\Users\rodx1\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.8\forge-1.20.1-47.4.8-binpatched.jar
+  Clean:     /home/eetgeenappels/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.20.1-20230612.114412/joined-1.20.1-20230612.114412-srg.jar
+  Output:    /home/eetgeenappels/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.8/forge-1.20.1-47.4.8-binpatched.jar
   KeepData:  false
   Unpatched: false
   Pack200:   false
   Legacy:    false
-Loading patches file: C:\Users\rodx1\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.8\forge-1.20.1-47.4.8-binpatches.lzma
+Loading patches file: /home/eetgeenappels/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.8/forge-1.20.1-47.4.8-binpatches.lzma
   Reading patch com.mojang.blaze3d.pipeline.RenderTarget.binpatch
     Checksum: 151eb55a Exists: true
   Reading patch com.mojang.blaze3d.platform.GlStateManager$BlendState.binpatch
@@ -2895,7 +2895,7 @@ Loading patches file: C:\Users\rodx1\.gradle\caches\forge_gradle\minecraft_user_
     Checksum: 5054d5d6 Exists: true
   Reading patch net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider.binpatch
     Checksum: 33daf11e Exists: true
-Processing: C:\Users\rodx1\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.20.1-20230612.114412\joined-1.20.1-20230612.114412-srg.jar
+Processing: /home/eetgeenappels/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.20.1-20230612.114412/joined-1.20.1-20230612.114412-srg.jar
   Patching com/mojang/blaze3d/pipeline/RenderTarget 1/1
   Patching com/mojang/blaze3d/platform/GlStateManager$BlendState 1/1
   Patching com/mojang/blaze3d/platform/GlStateManager$BooleanState 1/1

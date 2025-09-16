@@ -13,10 +13,9 @@ public class TotemFactory {
 	public static final String MODID = "totemfactory";
 
 	public TotemFactory(IEventBus modBus) {
-		NeoForge
 
 		// register DeferredRegister objects to the mod's event bus
-		TfItems.REGISTER.register(modEventBus);
-		TfTabs.REGISTER.register(modEventBus);
+		TfItems.REGISTER.register(modBus);
+		TfTabs.REGISTER.register(modBus);
 	}
 }

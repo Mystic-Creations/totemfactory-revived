@@ -1,8 +1,6 @@
 package net.mysticcreations.totemfactory.init;
 
 import net.minecraft.world.item.Items;
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
@@ -10,10 +8,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mysticcreations.totemfactory.TotemFactory;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class TfTabs {
     public static final DeferredRegister<CreativeModeTab> REGISTER = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TotemFactory.MODID);
-    public static final RegistryObject<CreativeModeTab> TAB_TOTEM_FACTORY = REGISTER.register("totem_factory",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB_TOTEM_FACTORY = REGISTER.register("totem_factory",
         () -> CreativeModeTab.builder()
             .title(Component.translatable("item_group." + TotemFactory.MODID + ".totem_factory"))
             .icon(() -> new ItemStack(Items.TOTEM_OF_UNDYING))

@@ -18,6 +18,7 @@ hs_err_pid*
 replay_pid*
 
 neoforge/build/*
+neoforge/build
 neoforge/run/*
 neoforge/.idea/*
 neoforge/.vscode/*
@@ -25,14 +26,18 @@ neoforge/.gradle/*
 neoforge/.github/*
 
 forge/build/*
+forge/build
 forge/run/*
+forge/run
 forge/.idea/*
 forge/.vscode/*
 forge/.gradle/*
 forge/.github/*
 
 fabric/build/*
+fabric/build
 fabric/run/*
+fabric/run
 fabric/.idea/*
 fabric/.vscode/*
 fabric/.gradle/*

@@ -1,19 +1,19 @@
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[4,)"
 license="MIT"
 
 [[mods]]
 modId="totemfactory"
-version="1.2-OG1.0m-Forge_1.20.1"
+version="1.2-OG1.0m-NeoForge_1.21.1"
 displayName="Create: Totem Factory"
 displayURL="https://modrinth.com/mod/create-totem-factory-revived"
 credits=""
-authors="OG: MarcosJoestar & jargames99\nPORT: JustMili"
+authors="OG: MarcosJoestar & jargames99\nPORT: JustMili/MysticCreations"
 
 [[dependencies.totemfactory]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.20.1]"
+versionRange="[1.21.1]"
 ordering="NONE"
 side="BOTH"
 
