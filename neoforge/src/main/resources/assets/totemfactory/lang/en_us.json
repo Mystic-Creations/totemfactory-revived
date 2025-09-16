@@ -1,13 +1,12 @@
 {
-  "itemGroup.totemfactory": "Example Mod Tab",
-  "block.totemfactory.example_block": "Example Block",
-  "item.totemfactory.example_item": "Example Item",
-
-  "totemfactory.configuration.title": "Create: Totem Factory Configs",
-  "totemfactory.configuration.section.totemfactory.common.toml": "Create: Totem Factory Configs",
-  "totemfactory.configuration.section.totemfactory.common.toml.title": "Create: Totem Factory Configs",
-  "totemfactory.configuration.items": "Item List",
-  "totemfactory.configuration.logDirtBlock": "Log Dirt Block",
-  "totemfactory.configuration.magicNumberIntroduction": "Magic Number Text",
-  "totemfactory.configuration.magicNumber": "Magic Number"
+  "item.totemfactory.totem_head": "Totem of Undying Head",
+  "item.totemfactory.totem_head_casing": "Totem of Undying Head Casing",
+  "item.totemfactory.incomplete_totem_head_casing": "Incomplete Totem of Undying Head Casing",
+  "item_group.totemfactory.totem_factory": "Create: Totem Factory",
+  "item.totemfactory.totem_body_casing": "Totem of Undying Body Casing",
+  "item.totemfactory.totem_body": "Totem of Undying Body",
+  "item.totemfactory.inactive_totem": "Inactive Totem of Undying",
+  "item.totemfactory.incomplete_totem_head": "Incomplete Totem of Undying Head",
+  "item.totemfactory.incomplete_totem_body": "Incomplete Totem of Undying Body",
+  "item.totemfactory.incomplete_totem_body_casing": "Incomplete Totem of Undying Body Casing"
 }
