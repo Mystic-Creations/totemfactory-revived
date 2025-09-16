@@ -39,3 +39,4 @@ fabric/.gradle/*
 fabric/.github/*
 .DS_Store
 *.txt
+!changelogs/*

@@ -1,5 +1,7 @@
 package net.mysticcreations.totemfactory;
 
+import net.mysticcreations.totemfactory.init.TfItems;
+import net.mysticcreations.totemfactory.init.TfTabs;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -29,27 +31,26 @@ import java.util.AbstractMap;
 public class TotemFactory {
 	public static final Logger LOGGER = LogManager.getLogger(TotemFactory.class);
 	public static final String MODID = "totemfactory";
-
-	public TotemFactory() {
-		MinecraftForge.EVENT_BUS.register(this);
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-	}
 	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	private static int messageID = 0;
+	private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
 
+	public TotemFactory(FMLJavaModLoadingContext modContext) {
+		MinecraftForge.EVENT_BUS.register(this);
+		IEventBus EVENT_BUS = modContext.getModEventBus();
+
+		TfItems.REGISTER.register(EVENT_BUS);
+		TfTabs.REGISTER.register(EVENT_BUS);
+	}
+	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(ResourceLocation.parse(MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
 		PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
 		messageID++;
 	}
 
-	private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
-
-	public static void queueServerWork(int tick, Runnable action) {
+	public static void wait(int tick, Runnable action) {
 		workQueue.add(new AbstractMap.SimpleEntry(action, tick));
 	}
-
 	@SubscribeEvent
 	public void tick(TickEvent.ServerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {

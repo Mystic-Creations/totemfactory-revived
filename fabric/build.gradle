@@ -6,7 +6,7 @@ sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = 'modid'
-version = '1.2-OG1.0m-FABRIC-1.21.1'
+version = '1.3-OG1.0m-FABRIC-1.20.1'
 group = 'com.yourname.modid'
 actualmodid = 'totemfactory'
 
@@ -18,13 +18,17 @@ loom {
         accessWidenerPath = file("src/main/resources/totemfactory.accesswidener")
 }
 
+repositories {
+    maven { url = "https://cursemaven.com/" }
+}
+
 dependencies {
-    minecraft "com.mojang:minecraft:1.21.1"
+    minecraft "com.mojang:minecraft:1.20.1"
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:0.16.10"
 
     //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.116.1+1.21.1"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.92.6+1.20.1"
 }
 
 processResources {

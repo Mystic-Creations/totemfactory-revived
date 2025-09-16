@@ -1,6 +1,3 @@
-/*
- *	MCreator note: This file will be REGENERATED on each build.
- */
 package net.mysticcreations.totemfactory.init;
 
 import net.minecraft.world.item.Item;
@@ -20,15 +17,15 @@ import net.mysticcreations.totemfactory.item.InactiveTotem;
 import net.mysticcreations.totemfactory.TotemFactory;
 
 public class TfItems {
+	public static Item INACTIVE_TOTEM;
 	public static Item TOTEM_HEAD;
+	public static Item TOTEM_BODY;
+	public static Item INCOMPLETE_TOTEM_BODY;
 	public static Item INCOMPLETE_TOTEM_HEAD;
 	public static Item TOTEM_HEAD_CASING;
-	public static Item INCOMPLETE_TOTEM_HEAD_CASING;
-	public static Item TOTEM_BODY;
 	public static Item TOTEM_BODY_CASING;
-	public static Item INCOMPLETE_TOTEM_BODY;
+	public static Item INCOMPLETE_TOTEM_HEAD_CASING;
 	public static Item INCOMPLETE_TOTEM_BODY_CASING;
-	public static Item INACTIVE_TOTEM;
 
 	public static void load() {
 		TOTEM_HEAD = register("totem_head", new TotemHead());
@@ -45,6 +42,6 @@ public class TfItems {
 	public static void clientLoad() {}
 
 	private static Item register(String registryName, Item item) {
-		return Registry.register(BuiltInRegistries.ITEM, ResourceLocation.parse(TotemFactory.MODID+":"+registryName), item);
+		return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(TotemFactory.MODID, registryName), item);
 	}
 }

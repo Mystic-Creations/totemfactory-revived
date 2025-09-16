@@ -17,7 +17,7 @@
       "item": "totemfactory:incomplete_totem_head"
     },
     {
-      "amount": 20250,
+      "amount": 250,
       "fluid": "create:potion",
       "nbt": "{Potion:\"minecraft:fire_resistance\"}"
     }
@@ -35,7 +35,7 @@
       "item": "totemfactory:incomplete_totem_head"
     },
     {
-      "amount": 20250,
+      "amount": 250,
       "fluid":  "create:potion",
       "nbt": "{Potion:\"minecraft:regeneration\"}"
     }
