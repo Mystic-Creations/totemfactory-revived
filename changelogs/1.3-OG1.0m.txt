@@ -1,0 +1,9 @@
+## Bug Fixes & Technical Improvements
+- Incomplete Totem parts no longer appear in the creative tab
+- Updated authors of the original mod and ports
+- Updated license
+  - For some reason it was ARR instead of MIT, that's fixed now
+
+## Ported to (from our version of the mod)
+- NeoForge 1.20.1
+- Forge 1.20.1
