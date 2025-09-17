@@ -42,6 +42,6 @@ public class TfItems {
 	public static void clientLoad() {}
 
 	private static Item register(String registryName, Item item) {
-		return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(TotemFactory.MODID, registryName), item);
+		return Registry.register(BuiltInRegistries.ITEM, ResourceLocation.parse(TotemFactory.MODID+":"+registryName), item);
 	}
 }

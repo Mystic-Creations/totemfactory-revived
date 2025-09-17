@@ -16,7 +16,7 @@ import net.mysticcreations.totemfactory.TotemFactory;
 
 public class TfTabs {
 	public static final ResourceKey<CreativeModeTab> TAB_TOTEM_FACTORY =
-		ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(TotemFactory.MODID, "totem_factory"));
+		ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.parse(TotemFactory.MODID+":totem_factory"));
 
 	public static void load() {
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TAB_TOTEM_FACTORY,

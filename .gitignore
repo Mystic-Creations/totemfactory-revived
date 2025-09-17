@@ -45,4 +45,4 @@ fabric/.github/*
 .DS_Store
 *.txt
 !changelogs/*
-.idea
+.idea/*

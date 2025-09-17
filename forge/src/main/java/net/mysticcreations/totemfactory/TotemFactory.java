@@ -14,9 +14,9 @@ public class TotemFactory {
 	public static final Logger LOGGER = LogManager.getLogger(TotemFactory.class);
 	public static final String MODID = "totemfactory";
 
-	public TotemFactory() {
+	public TotemFactory(FMLJavaModLoadingContext modContext) {
 		MinecraftForge.EVENT_BUS.register(this);
-		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		IEventBus modEventBus = modContext.getModEventBus();
 
 		TfItems.REGISTER.register(modEventBus);
 		TfTabs.REGISTER.register(modEventBus);
